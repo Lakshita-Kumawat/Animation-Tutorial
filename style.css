@@ -1,0 +1,42 @@
+#square{
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(14, 202, 202);
+    border-radius: 5px;
+    margin: 3rem 0 0 3rem;
+    text-align: center;
+    animation: color 4s infinite;
+}
+
+#square2{
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(14, 202, 202);
+    border-radius: 5px;
+    margin: 3rem 0 0 3rem;
+    text-align: center;
+    animation: move 4s infinite;
+}
+
+@keyframes color{
+    0%{
+        background-color: rgb(14, 202, 202);
+    }100%{
+        background-color: pink;
+    }
+}
+
+@keyframes move{
+    0%{
+        left:0px;
+        background-color: rgb(14, 202, 202);
+    }50%{
+        left: 300px;
+        background-color: pink;
+    }100%{
+        left:0px;
+        background-color: rgb(14, 202, 202);
+    }
+}
